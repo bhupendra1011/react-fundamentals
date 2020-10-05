@@ -40,7 +40,11 @@ function App() {
           <li>
             <button onClick={() => removeItem(item)}>remove</button>{' '}
             <label htmlFor={`${item.value}-input`}>{item.value}</label>{' '}
-            <input id={`${item.value}-input`} defaultValue={item.value} />
+            <input
+              // key={item.id}
+              id={`${item.value}-input`}
+              defaultValue={item.value}
+            />
           </li>
         ))}
       </ul>
